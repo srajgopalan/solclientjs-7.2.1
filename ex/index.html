@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="">
+<head>
+    <title>Solclientjs Samples </title>
+    <!-- style -->
+    <link type="text/css" href="common/table.css" rel="stylesheet">
+    <script type="text/javascript" src="common/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="common/jquery-ui-1.8.6.custom.min.js"></script>
+    <script type="text/javascript" src="common/solui.js"></script>
+</head>
+
+<body vlink="#eb8f00">
+
+<table summary="Solclientjs Code Samples">
+    <caption>
+        <div id="itsthetable">
+            <h1>Solclientjs Samples </h1>
+        </div>
+    </caption>
+    <thead>
+    <tr>
+        <th scope="col"> Sample Name</th>
+        <th scope="col"> Overview</th>
+        <th scope="col"> Source Code</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th scope="row"></th>
+        <td colspan="4">
+            <h4>Copyright 2009-2016 Solace Corporation. All rights reserved. </h4>
+
+            <h6>Permission is hereby granted, free of charge, to any person obtaining a copy of
+                this software and associated documentation files (the "Software"), to use and
+                copy the Software, and to permit persons to whom the Software is furnished to
+                do so, subject to the following conditions:</h6>
+            <h6>The above copyright notice and this permission notice shall be included in all
+                copies or substantial portions of the Software.
+            </h6>
+            <h6>
+                UNLESS STATED ELSEWHERE BETWEEN YOU AND SOLACE CORPORATION, THE SOFTWARE IS
+                PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING
+                BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+                BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+                CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+                SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            </h6>
+            <a href="http://www.solacesystems.com">http://www.SolaceSystems.com</a>
+    </td>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr class="odd" style="padding: 5px ;">
+        <th scope="row" id="r101"> DirectPubsub <br>
+            <button type="button" onclick="solace.sample.fireNewWindow('pubsub/index.html', '_blank','top=40,left=40,width=850,height=700,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes,resizable=yes');">Try it</button>
+            <br><br><br><br><br>
+            DirectPubsub-Debug<br>
+            <button type="button" onclick="solace.sample.fireNewWindow('pubsub/index_debug.html', '_blank','top=40,left=40,width=850,height=700,menubar=yes,status=yes,location=yes,toolbar=yes,scrollbars=yes,resizable=yes');">Try it</button>
+        </th>
+        <td>
+            <div style="font-size: 1.1em;  width: 100%; ">
+               This sample demonstrates the following:
+               <li>Create a new solace.Session</li>
+               <li>Connect/Disconnect a solace.Session</li>
+               <li>Add/Remove topic subscriptions</li>
+               <li>Publish/Receive messages</li>
+               <br>
+               The debug version of this sample demonstrates how to enable API logging.
+            </div>
+        </td>
+        <td><a href="pubsub/sol-direct-pubsub.js">pubsub/sol-direct-pubsub.js </a> </td>
+    </tr>
+
+    <tr class="odd" style="padding: 5px ;">
+        <th scope="row" id="r102"> Messenger <br>
+            <button type="button" onclick="solace.sample.fireNewWindow('messenger/index.html', '_blank','top=40,left=40,width=850,height=600,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,resizable=yes');">Try it</button>
+        </th>
+        <td>
+            <div style="font-size: 1.1em;  width: 100%; ">
+               This sample demonstrates the following:
+               <li>Create a new solace.Session</li>
+               <li>Connect/Disconnect a solace.Session</li>
+               <li>Publish/Receive messages</li>
+               <li>Using Solace Data Types (SDT)</li>
+               <li>No Local Delivery</li>
+            </div>
+        </td>
+        <td><a href="messenger/sol-messenger.js">messenger/sol-messenger.js </a> </td>
+    </tr>
+
+    <tr class="odd" style="padding: 5px ;"><F5>
+        <th scope="row" id="r103"> DirectRequestReply <br>
+            <button type="button" onclick="solace.sample.fireNewWindow('request-reply/index.html', '_blank','top=40,left=40,width=850,height=600,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,resizable=yes');">Try it</button>
+        </th>
+        <td>
+            <div style="font-size: 1.1em;  width: 100%; ">
+               This sample demonstrates the following:
+               <li>Create a new solace.Session</li>
+               <li>Connect/Disconnect a solace.Session</li>
+               <li>Send request and reply</li>
+            </div>
+        </td>
+        <td><a href="request-reply/sol-request-reply.js">request-reply/sol-request-reply.js </a> </td>
+    </tr>
+
+    <tr class="odd" style="padding: 5px ;">
+        <th scope="row" id="r104"> Event Monitor <br>
+            <button type="button" onclick="solace.sample.fireNewWindow('event-monitor/index.html', '_blank','top=40,left=40,width=850,height=600,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,resizable=yes');">Try it</button>
+        </th>
+        <td>
+            <div style="font-size: 1.1em;  width: 100%; ">
+               This sample demonstrates the following:
+               <li>Create a new solace.Session</li>
+               <li>Connect/Disconnect a solace.Session</li>
+               <li>Event monitor</li>
+            </div>
+        </td>
+        <td><a href="event-monitor/sol-event-monitor.js">event-monitor/sol-event-monitor.js </a> </td>
+    </tr>
+
+    <tr class="odd" style="padding: 5px ;">
+        <th scope="row" id="r104"> SolCache Request <br>
+            <button type="button" onclick="solace.sample.fireNewWindow('solcache/index.html', '_blank','top=40,left=40,width=850,height=600,menubar=no,status=no,location=no,toolbar=no,scrollbars=no,resizable=yes');">Try it</button>
+        </th>
+        <td>
+            <div style="font-size: 1.1em;  width: 100%; ">
+               This sample demonstrates the following:
+               <li>Create a new solace.Session</li>
+               <li>Connect/Disconnect a solace.Session</li>
+               <li>Create/Dispose a solace.CacheSession</li>
+               <li>Request a message from a solace.CacheSession</li>
+            </div>
+            <div style="font-size: 1.1em;  width: 100%; ">
+                Note: To run this sample, it is expected that SolCache is be configured and running properly on the appliance.
+            </div>
+        </td>
+        <td><a href="solcache/sol-cache.js">solcache/sol-cache.js </a> </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>
+
+
+
+
